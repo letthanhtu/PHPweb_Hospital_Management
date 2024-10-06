@@ -442,7 +442,7 @@
         <h3>
           Phòng trưng bày của chúng tôi
         </h3>
-        <p>Trang thiết bị hiện đại, các hoạt động y tế chuyên nghiệp, đội ngũ bác sĩ tận tâm đảm bảo mang đến chất lượng
+        <p>Trang thiết bị hiện đại, các hoạt động y tế chuyên nghiệp, đội ngũ bác sĩ tận tâm mang đến chất lượng
           chăm sóc sức khỏe tốt nhất.</p>
 
         <div class="gallery-content">
@@ -465,6 +465,54 @@
           <figure class="gallery-item">
             <img src="images/gallery-6.jpg" alt="Photo of beautifully oranged food" />
           </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-heading">
+          <h3><span>Các câu hỏi</span> thường gặp</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+        <div class="faq-content">
+          <div class="faq-left">
+            <img src="images/d5.png" alt="Doctor Image" class="faq-image">
+          </div>
+          <div class="faq-right">
+
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <p>Q. What Do You Mean By Item And End Product?</p>
+                <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>The answer to the question goes here.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <p>Q. What Are Some Examples Of Permitted End Products?</p>
+                <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>The answer to the question goes here.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <p>Q. Am I Allowed To Modify The Item That I Purchased?</p>
+                <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>The answer to the question goes here.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

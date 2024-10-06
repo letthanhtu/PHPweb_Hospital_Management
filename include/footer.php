@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="footer-link-box">
-      <strong>Thông Tin về We Care</strong>
+      <p>Thông Tin về We Care</p>
       <ul>
         <li><a href="index.php">Trang chủ</a></li>
         <li><a href="about_us.php">Giới thiệu</a></li>
@@ -21,7 +21,7 @@
       </ul>
     </div>
     <div class="footer-link-box">
-      <strong>Dịch vụ của chúng tôi</strong>
+      <p>Dịch vụ của chúng tôi</p>
       <ul>
         <li><a href="#">Chăm sóc răng miệng</a></li>
         <li><a href="#">Xét ngiệm máu</a></li>
@@ -30,7 +30,7 @@
       </ul>
     </div>
     <div class="footer-link-box">
-      <strong>Chăm sóc khách hàng</strong>
+      <p>Chăm sóc khách hàng</p>
       <ul>
         <li><a><i class="fas fa-phone-alt"> </i>
             +123 4567 89</a></li>

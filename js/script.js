@@ -60,3 +60,20 @@ const obs = new IntersectionObserver(function(entries) {
   rootMargin: '-80px',
 });
 obs.observe(sectionHeroEl);
+
+// faq
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const faqItem = question.parentElement;
+    faqItem.classList.toggle('active');
+
+    const answer = faqItem.querySelector('.faq-answer');
+    if (faqItem.classList.contains('active')) {
+      answer.style.display = 'block';
+      question.querySelector('i').classList.replace('fa-plus', 'fa-times');
+    } else {
+      answer.style.display = 'none';
+      question.querySelector('i').classList.replace('fa-times', 'fa-plus');
+    }
+  });
+});

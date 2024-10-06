@@ -1,0 +1,315 @@
+.menu-icon,
+.menu-btn {
+  display: none;
+}
+/* Below 1344px (smaller desktops) */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .navigation {
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+  }
+  .navigation .menu li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation .menu li a {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 3rem 2rem;
+  }
+  .search {
+    margin-left: 3.2rem;
+  }
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+}
+/* < 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px */
+    font-size: 56.25%;
+  }
+  .hero {
+    max-width: 120rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+  }
+  .hero-text {
+    margin-bottom: 4rem;
+    background-color: #ffffff;
+    padding: 3rem;
+    margin-top: 0;
+  }
+}
+/* < 944px Tablets */
+@media (max-width: 59em) {
+  .navigation {
+    justify-content: space-between;
+    padding: 3rem 0;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+  }
+  .logo,
+  .nav-appointment-btn {
+    z-index: 103;
+  }
+  .logo {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+  .navigation .menu {
+    /* display: none;
+      position: absolute;
+      left: 0px;
+      top:100%; */
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* z-index: 102; */
+    box-shadow: 2px 30px 30px rgba(0, 0, 0, 0.06);
+  }
+  .navigation .menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -100%;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+  .navigation .menu li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .navigation .menu li a {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 3rem 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .navigation .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 1rem 0;
+    position: relative;
+    user-select: none;
+    z-index: 106;
+  }
+  .navigation .menu-icon .nav-icon {
+    background-color: #181818;
+    display: block;
+    position: relative;
+    height: 0.2rem;
+    transition: background 0.2s ease-out;
+    width: 2.5rem;
+  }
+  .navigation .menu-icon .nav-icon::before,
+  .navigation .menu-icon .nav-icon::after {
+    background-color: #181818;
+    content: "";
+    position: absolute;
+    height: 100%;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+
+  .navigation .menu-icon .nav-icon::before {
+    top: 9px;
+  }
+  .navigation .menu-icon .nav-icon::after {
+    top: -9px;
+  }
+  .navigation .menu-icon:checked ~ .menu-icon .nav-icon,
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .navigation .menu-btn:checked ~ .menu {
+    display: block;
+  }
+
+  .what-we-provide {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  #our_story {
+    grid-template-columns: 1fr;
+  }
+  .our-story-img img {
+    max-height: 40rem;
+  }
+  .our-stroy-text {
+    padding: 3rem;
+  }
+  #why-choose-us {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-content {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-img {
+    margin-right: auto;
+  }
+  .testimonials-img img {
+    width: 100%;
+  }
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  /*-webkit-backdrop-filter: caniuse.com (search: backdrop filter, appear*/
+  .navigation {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .nav-open .navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 100;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+/* <704px smaller tablets */
+@media (max-width: 44em) {
+  .hero-text {
+    padding: 2.2rem;
+  }
+  .hero-text h1,
+  .our-stroy-text h2,
+  .services-heading h2,
+  .why-choose-us-left h3,
+  .why-choose-us-right h3,
+  .our-team-heading h3,
+  .testimonials-heading h3 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .hero-text-btns {
+    flex-direction: column;
+  }
+  .hero-text-btns a {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .appointment-search {
+    grid-template-columns: 1fr;
+  }
+  .appointment-search button {
+    height: 4.5rem;
+  }
+  .what-we-provide {
+    grid-template-columns: 1fr;
+  }
+  .our-stroy-text {
+    padding: 2rem 1.5rem;
+  }
+  .story-numbers-box {
+    padding: 1.5rem;
+  }
+  .story-numbers-box strong {
+    font-size: 1.4rem;
+  }
+  .why-choose-us-right,
+  .why-choose-us-left {
+    padding: 3rem 2rem;
+  }
+  .why-choose-box-container {
+    grid-template-columns: 1fr;
+  }
+  #subscribe h3 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  #subscribe {
+    padding: 2rem;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* <544px Phones */
+@media (max-width: 34em) {
+  .nav-appointment-btn {
+    display: none;
+  }
+  .story-numbers-container {
+    grid-template-columns: 1fr;
+  }
+}
+
