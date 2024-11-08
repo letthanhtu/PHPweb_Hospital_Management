@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400; /*default*/
+  color: #555;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+strong {
+  font-weight: 500;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  color: #122853;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+*:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 0.8rem #f5f7fb; */
+}
+/* width: thanh cuộn */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track: bóng đổ bên trong của thanh cuộn */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(233, 233, 233);
+}
+
+/* Handle : tay cầm của thanh cuộn */
+::-webkit-scrollbar-thumb {
+  background: rgb(56, 56, 56);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1b1b1b;
+}
+/* Hero-Section */
+.header {
+  background-color: #f5f7fb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8.4rem;
+  padding: 4.8rem 4.8rem 2.4rem 4.8rem;
+  position: relative;
+  margin: 0;
+
+  /* flex-direction: column; */
+  /* min-height: 600px; */
+}
+/* navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 130rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.logo {
+  color: #122853;
+  font-weight: 700;
+  font-size: 2.8rem;
+  height: 2.8rem;
+  margin-bottom: 2rem;
+}
+.logo span {
+  background-color: #014dd5;
+  color: #ffffff;
+  padding: 0px 0.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+  margin-left: auto;
+  gap: 4.8rem;
+  margin-bottom: 3.2rem;
+}
+.menu-nav-link:link,
+.menu-nav-link:visited {
+  display: inline-block;
+  /* margin: 0px 20px; */
+  color: #303030;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all ease 0.3s;
+}
+
+.menu-nav-link:hover,
+.menu-nav-link:active {
+  color: #014dd5;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.03);
+}
+
+.sticky .hero-content {
+  margin-top: 96px;
+}
+

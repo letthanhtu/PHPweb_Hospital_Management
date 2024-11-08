@@ -1,0 +1,141 @@
+body {
+  margin: 2%;
+  background-color: #f6f7fa;
+}
+.login-box {
+  width: 38%;
+  height: 70%;
+  float: left;
+  background-color: white;
+  border-radius: 8px;
+  margin-left: 200px;
+  padding: 3px 20px;
+  box-shadow: 0 3px 5px 0 rgba(240, 240, 240, 0.3);
+  animation: transitionIn-Y-over 0.5s;
+}
+td h3 {
+  font-weight: 600;
+  color: #3d4465;
+  font-size: 24px;
+  margin-top: 0;
+  text-align: center;
+}
+td p {
+  color: #7e7e7e;
+  font-size: 14px;
+  margin: 10px auto;
+}
+.login-logo img {
+  width: 200px;
+  height: 70%;
+  margin: 0;
+}
+
+.header-text {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.sub-text {
+  font-size: 15px;
+  color: rgb(138, 138, 138);
+}
+
+.form-label {
+  color: #7e7e7e;
+  text-align: left;
+  font-size: 14px;
+}
+.form-check-input {
+  margin-top: 10px;
+}
+.form-check-label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.form-control:active .form-control:hover {
+  border: 1px solid #d7dae3 !important ;
+}
+.login-box .form-control {
+  border: 1px solid #d3d3d3;
+  padding: 12px;
+}
+
+.form-control {
+  background: #fff;
+  border: 1px solid #d7dae3;
+  color: #3e4954;
+  height: 56px;
+  padding: 2px;
+  width: 120%;
+  border-radius: 0.75rem;
+  /* font-size: 2.4rem; */
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 !important;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #3C91E6;
+  border-color: #3C91E6;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #3C91E6;
+  border-color: #3C91E6;
+}
+
+.label-td {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.hover-link1 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hover-link1:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.login-btn {
+  /*margin-top: 15px;*/
+  margin-bottom: 15px;
+  width: 120%;
+  height: 56px;
+}
+
+.back img {
+  /* content: ""; */
+  float: right;
+  /* background-size: cover; */
+  height: 589px;
+  /* position: absolute !important; */
+  width: 38%;
+  left: 500px;
+  margin-right: 150px;
+  top: 40%;
+  z-index: 1;
+  /* -webkit-transform: skew(-5deg);
+  transform: skew(-5deg); */
+}
+.box-skew {
+  box-shadow: none;
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 50px;
+  width: 500px;
+  background-color: #fff;
+}
+.login-box .box-skew1 {
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}

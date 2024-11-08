@@ -10,7 +10,7 @@
       <li><a class="menu-nav-link" href="services.php">Dịch vụ</a></li>
       <li><a class="menu-nav-link" href="doctors.php">Bác sĩ</a></li>
       <li><a class="menu-nav-link" href="contact_us.php">Liên hệ</a></li>
-      <li><a class="menu-nav-link" href="#">Đăng nhập</a></li>
+      <li><a class="menu-nav-link" href="index1.php">Đăng nhập</a></li>
     </ul>
   </nav>
   <div class="menu-search">
@@ -36,7 +36,3 @@
   </button>
 
 </header>
-
-</body>
-
-</html>

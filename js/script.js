@@ -77,3 +77,12 @@ document.querySelectorAll('.faq-question').forEach(question => {
     }
   });
 });
+
+
+// Make appointment
+function populateDoctors(){
+var departmentSelect = document.getElementById('department');
+var doctorSelect = document.getElementById('doctor');
+doctorSelect.innerHTML = '<option value = "" disabled selected doctor> </option>';
+
+}
